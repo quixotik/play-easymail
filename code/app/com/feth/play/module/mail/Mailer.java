@@ -1,7 +1,7 @@
 package com.feth.play.module.mail;
 
-import akka.actor.ActorSystem;
-import akka.actor.Cancellable;
+import org.apache.pekko.actor.ActorSystem;
+import org.apache.pekko.actor.Cancellable;
 import com.google.inject.assistedinject.Assisted;
 import com.typesafe.config.Config;
 import play.libs.mailer.Email;

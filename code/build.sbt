@@ -1,13 +1,14 @@
-organization := "com.feth"
+organization := "com.github.quixotik"
 
 name := "play-easymail"
+version := "3.0.5"
 
-scalaVersion := "2.11.11"
-crossScalaVersions := Seq("2.11.11", "2.12.2")
+crossScalaVersions := Seq("2.13.14", "3.3.1")
+scalaVersion := crossScalaVersions.value.head
 
 libraryDependencies ++= Seq(
-  "com.typesafe.play" %% "play-mailer" % "6.0.1",
-  "com.typesafe.play" %% "play-mailer-guice" % "6.0.1",
+  "org.playframework" %% "play-mailer" % "10.0.0",
+  "org.playframework" %% "play-mailer-guice" % "10.0.0",
   guice
 )
 

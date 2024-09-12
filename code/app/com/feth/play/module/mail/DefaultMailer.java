@@ -1,6 +1,6 @@
 package com.feth.play.module.mail;
 
-import akka.actor.ActorSystem;
+import org.apache.pekko.actor.ActorSystem;
 import com.typesafe.config.Config;
 import play.libs.mailer.MailerClient;
 

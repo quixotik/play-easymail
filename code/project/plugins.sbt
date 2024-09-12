@@ -2,13 +2,11 @@
 logLevel := Level.Warn
 
 // The Typesafe repository
-resolvers += "Typesafe Snapshots Repository" at "https://repo.typesafe.com/typesafe/snapshots/"
-
 resolvers += "Typesafe repository" at "https://repo.typesafe.com/typesafe/releases/"
 
 // Use the Play sbt plugin for Play projects
-addSbtPlugin("com.typesafe.play" % "sbt-plugin" % Option(System.getProperty("play.version")).getOrElse("2.6.1"))
+addSbtPlugin("org.playframework" % "sbt-plugin" % "3.0.5")
 
-addSbtPlugin("com.jsuereth" % "sbt-pgp" % "1.0.0")
+addSbtPlugin("com.jsuereth" % "sbt-pgp" % "1.1.0")
 
-addSbtPlugin("com.github.gseitz" % "sbt-release" % "1.0.3")
+addSbtPlugin("com.github.gseitz" % "sbt-release" % "1.0.9")
